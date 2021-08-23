@@ -24,7 +24,7 @@ class Example:
 
 
 def printOneToTen(message):
-''' Documentation goes here.
+''' Documentation goes here (in the docstring)
 '''
   for n in range(0,10):
     print(n)
