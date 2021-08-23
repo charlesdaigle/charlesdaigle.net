@@ -337,14 +337,20 @@ collapse {
   }
  }
 
- .embed-wrapper.chess {
+.embed-wrapper.chess {
   width: 100%;
   height: 100%;
- }
+}
 
-  .embed-wrapper.video {
-  
- }
+.embed-wrapper.video {
+  width: 100%;
+  height: auto;
+}
+
+.embed-wrapper.spotify {
+  width: 100%;
+  height: 100%;
+}
 
  .prettyprint ol.linenums > li { list-style-type: decimal; }
 
