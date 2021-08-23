@@ -1,0 +1,14 @@
+h1 {
+	display: none;
+}
+
+/* Container Tweaks
+––––––––––––––––––––––––––––––––––––––––––––––––––
+*/
+.container-fluid {
+  	max-width: 1200px;
+}
+
+.img-fluid {
+	max-width: 1000px;
+}

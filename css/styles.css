@@ -1,0 +1,334 @@
+@charset "UTF-8";
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #FEF8F8;
+}
+
+a, a:hover {
+  text-decoration: unset;
+  color: unset;
+}
+
+/* Container Tweaks
+––––––––––––––––––––––––––––––––––––––––––––––––––
+*/
+.container-fluid {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Grid Tweaks
+––––––––––––––––––––––––––––––––––––––––––––––––––
+*/
+.row {
+  padding: 10px;
+}
+.row div {
+  margin-bottom: 20px;
+}
+
+.first {
+  margin-top: 100px;
+}
+
+.col {
+  margin: 0 auto;
+}
+
+/* Titles
+––––––––––––––––––––––––––––––––––––––––––––––––––
+*/
+h1 {
+  font-family: Raleway;
+  font-weight: 600;
+}
+h1 .tag-title {
+  font-family: Raleway;
+  font-weight: 600;
+  color: #000000;
+  background-color: #F5E2D6;
+}
+h1 .badge-primary {
+  color: #000000;
+  background-color: #F5E2D6;
+  font-style: italic;
+  margin: 100px 0px 10px 25px;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 6px;
+}
+
+.name {
+  display: inline-block;
+}
+
+.post-title {
+  padding-top: 100px;
+}
+
+/* Text
+––––––––––––––––––––––––––––––––––––––––––––––––––
+*/
+p, li {
+  font-family: "Poppins";
+}
+
+.text-link {
+  color: #2698d9;
+}
+
+/* Image
+––––––––––––––––––––––––––––––––––––––––––––––––––
+*/
+/* Navbar
+––––––––––––––––––––––––––––––––––––––––––––––––––
+*/
+.navbar {
+  display: flex;
+  background-color: rgba(245, 240, 240, 0.95);
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 6px;
+  text-align: center;
+}
+
+.navbar-nav {
+  text-align: center;
+}
+
+.navbar-brand {
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  transition: border-color 100ms ease-out;
+  margin: 0.5em;
+  padding: 5px;
+  transition: transform 100ms ease-out, border-color 100ms ease-out, background-color 100ms ease-out;
+}
+
+.navbar-brand:hover {
+  border-color: #BBBBBB;
+  background-color: #ebe6e6;
+  transform: scale(1.05);
+}
+
+.navbar-link {
+  display: inline-block;
+  margin-left: 20px;
+  padding: 10px;
+  margin-top: 3px;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  transition: transform 100ms ease-out, background-color 100ms ease-out, border-color 100ms ease-out;
+}
+
+.navbar-link:hover {
+  background-color: #ebe6e6;
+  border-color: #ccc;
+  margin-left: 20px;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.navbar-stem {
+  background-color: transparent;
+  transition: transform 100ms ease-out, background-color 100ms ease-out;
+}
+
+.navbar-stem:hover {
+  border: 1px solid transparent;
+  border-color: #a2c99c;
+  background-color: #c6fcbe;
+  transform: scale(1.05);
+}
+
+.navbar-active {
+  font-weight: bold;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.5rem;
+  border-color: #ddd;
+  padding: 10px;
+}
+
+.navbar-active:hover {
+  margin-left: 20px;
+}
+
+.navbar-toggler {
+  z-index: 500;
+  border-radius: 0.5rem;
+  margin-bottom: 10px;
+}
+
+collapse {
+  margin: 0 auto;
+}
+
+/* Headroom (navbar hiding)
+––––––––––––––––––––––––––––––––––––––––––––––––––
+*/
+.headroom {
+  will-change: transform;
+  -webkit-transition: -webkit-transform 500ms cubic-bezier(0.77, 0, 0.175, 1);
+  transition: -webkit-transform 500ms cubic-bezier(0.77, 0, 0.175, 1);
+  -o-transition: transform 500ms cubic-bezier(0.77, 0, 0.175, 1);
+  transition: transform 500ms cubic-bezier(0.77, 0, 0.175, 1);
+  transition: transform 500ms cubic-bezier(0.77, 0, 0.175, 1), -webkit-transform 500ms cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.headroom--pinned {
+  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  transform: translateY(0%);
+}
+
+.headroom--unpinned {
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+.header {
+  position: fixed;
+  padding: 20px;
+  padding-top: 5px;
+  border-radius: 15px;
+  z-index: 10;
+}
+
+.header-fixed {
+  position: fixed;
+  z-index: 100;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+/* Card 
+––––––––––––––––––––––––––––––––––––––––––––––––––
+*/
+.card {
+  transition: transform 100ms ease-out;
+  z-index: 50;
+  position: relative;
+  border-radius: 20px;
+  border-color: #eee;
+  border-style: solid;
+  border-width: 1px;
+  min-width: 90%;
+  padding: 25px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-family: "Poppins";
+}
+.card a {
+  display: inline;
+}
+.card h2 {
+  font-weight: 600;
+  font-size: 20px;
+}
+.card h4 {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  font-style: italic;
+}
+.card p {
+  display: inline;
+  font-weight: 400;
+  font-size: 16px;
+  font-style: normal;
+  padding-top: 10px;
+}
+.card .projectTags {
+  display: block;
+  padding-top: 10px;
+  margin-bottom: 0px;
+}
+.card .badge {
+  display: inline;
+  font-style: italic;
+  width: min-content;
+}
+.card .badge-primary {
+  display: inline-block;
+  position: relative;
+  z-index: 100;
+  color: #000000;
+  background-color: #f5e2d6;
+  margin-right: 2px;
+  margin-left: 2px;
+  margin-top: 0px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 4px;
+  margin-top: 10px;
+}
+.card .badge-primary:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 100ms ease-out;
+  cursor: pointer;
+}
+
+/* Embeds
+––––––––––––––––––––––––––––––––––––––––––––––––––
+*/
+.embed-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  height: 0;
+}
+
+.embed-wrapper iframe, .embed-wrapper embed, .embed-wrapper object {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.embed-wrapper.chess {
+  width: 100%;
+  height: 100%;
+}
+
+.prettyprint ol.linenums > li {
+  list-style-type: decimal;
+}
+
+table {
+  display: block;
+  overflow: auto;
+  width: 100%;
+}
+
+table th {
+  font-weight: 600;
+}
+
+table td,
+table th {
+  border: 1px solid #dfe2e5;
+  padding: 6px 13px;
+}
+
+table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+/*# sourceMappingURL=styles.css.map */

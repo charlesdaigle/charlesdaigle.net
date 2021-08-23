@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Skeleton: Responsive CSS Boilerplate</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="../../dist/css/normalize.css">
+    <link rel="stylesheet" href="../../dist/css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Scripts
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    
+    <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="../../dist/images/favicon.png">
+    <script>
+      window.onscroll = function() {myFunction()};
+
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Primary Page Layout
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="section hero">
+      <div class="container">
+        <div class="row">
+          <div class="one-half column">
+            <h4 class="hero-heading">charles daigle</h4>
+          </div>
+          <div class="one-half column phones">
+            <img class="pic" src="images/pic.png">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Navbar
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="section">
+      <div class="row">
+        <nav class="navbar">
+          <div class="container">
+            <ul>
+              <li class="active navbar-item">
+                <a href="" class="navbar-link">Home</a>
+              </li>
+              <li class="navbar-item">
+                <a href="" class="navbar-link">Projects</a>
+              </li>
+              <li class="navbar-item">
+                <a href="" class="navbar-link">About</a>
+              </li>
+              <li class="navbar-item">
+                <a href="" class="navbar-link">Extras</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- Cards
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="section">
+      <ul class="cards">
+        <li>
+          <a href="" class="card">
+            <img src="https://www.modelectronics.com/sites/modelectronics.com/files/styles/large/public/media_product_photos/k-985_interior.png?itok=CPUJhufo" class="card__image" alt="" />
+            <div class="card__overlay">
+              <div class="card__header">
+                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
+                <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" />
+                <div class="card__header-text">
+                  <h3 class="card__title">The Wahtz Wah</h3>
+                  <span class="card__status">December 2019</span>
+                </div>
+              </div>
+              <p class="card__description">Built a wah-wah effect pedal.</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="" class="card">
+            <img src="https://i.redd.it/vjnitpv2ns841.jpg" class="card__image" alt="" />
+            <div class="card__overlay">
+              <div class="card__header">
+                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
+                <img class="card__thumb" src="https://i.imgur.com/sjLMNDM.png" alt="" />
+                <div class="card__header-text">
+                  <h3 class="card__title">8-Bit Computer</h3>
+                  <span class="card__status">Aug 2021</span>
+                </div>
+              </div>
+              <p class="card__description">Created Ben Eater's 8-bit breadboard computer.</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="" class="card">
+            <img src="images/mmp.png" class="card__image" alt="" />
+            <div class="card__overlay">
+              <div class="card__header">
+                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
+                <img class="card__thumb" src="https://i.imgur.com/sjLMNDM.png" alt="" />
+                <div class="card__header-text">
+                  <h3 class="card__title">Mobile Real-Time Audio Effects Unit</h3>
+                  <span class="card__status">Dec 2020</span>
+                </div>
+              </div>
+              <p class="card__description">Designed and implemented a mobile GUI and backend to process and output real-time audio inputs.</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="" class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Raspberry_Pi_4_Model_B_-_Side.jpg/1200px-Raspberry_Pi_4_Model_B_-_Side.jpg" class="card__image" alt="" />
+            <div class="card__overlay">
+              <div class="card__header">
+                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
+                <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" />
+                <div class="card__header-text">
+                  <h3 class="card__title">Raspberry Pi Daily Notification Server</h3>
+                  <span class="card__status">Aug 2021</span>
+                </div>
+              </div>
+              <p class="card__description">Designed a system to send daily reading links from a host Raspberry Pi to a number of client devices.</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+    
+    <!-- End Document
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  </body>
+</html>
