@@ -93,6 +93,7 @@ p, li {
   border-radius: 12px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 6px;
   text-align: center;
+  max-width: 100%;
 }
 
 .navbar-nav {
@@ -104,7 +105,7 @@ p, li {
   border-radius: 0.5rem;
   background-color: transparent;
   transition: border-color 100ms ease-out;
-  margin: 0.5em;
+  margin: 0;
   padding: 5px;
   transition: transform 100ms ease-out, border-color 100ms ease-out, background-color 100ms ease-out;
 }
@@ -118,11 +119,20 @@ p, li {
 .navbar-link {
   display: inline-block;
   margin-left: 20px;
-  padding: 10px;
-  margin-top: 3px;
+  padding: 8px;
   border: 1px solid transparent;
   border-radius: 0.5rem;
   background-color: transparent;
+  transition: transform 100ms ease-out, background-color 100ms ease-out, border-color 100ms ease-out;
+}
+
+.button {
+  font-weight: 600;
+  border-color: #bab6ab;
+  border-radius: 0.5rem;
+  background-color: #e8e7e300;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  float: right;
   transition: transform 100ms ease-out, background-color 100ms ease-out, border-color 100ms ease-out;
 }
 
@@ -152,6 +162,7 @@ p, li {
   border-width: 1px;
   border-radius: 0.5rem;
   border-color: #ddd;
+  max-height: 100%;
   padding: 10px;
 }
 
@@ -162,7 +173,6 @@ p, li {
 .navbar-toggler {
   z-index: 500;
   border-radius: 0.5rem;
-  margin-bottom: 10px;
 }
 
 collapse {
@@ -195,7 +205,7 @@ collapse {
 
 .header {
   position: fixed;
-  padding: 20px;
+  padding: 10px;
   padding-top: 5px;
   border-radius: 15px;
   z-index: 10;

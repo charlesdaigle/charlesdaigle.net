@@ -17,10 +17,6 @@
 <?php include './navbar.php'; ?>
 <div class="container-fluid">
 
-    <div class="row">
-        <a href="./index.php">Home</a>   
-    </div>
-
     <h1 class="tag-title">
         <span class="badge badge-primary"><?php echo $tag_id?></span>
     </h1>

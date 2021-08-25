@@ -18,7 +18,7 @@ const TAG_ORDER = ['audio',
                    'pedal',
                    'raspi',
                    'server'];
-                   console_log(TAG_ORDER);
+                   //console_log(TAG_ORDER);
 
 class Project{
     public $id;
@@ -77,6 +77,57 @@ class Project{
       }
     }
 
+    function get_related__ByTag($top_N) {
+    // Get the top N related projects by their tag association score.
+
+        // Reference a single list of project files
+        // Iterate over project data files in ./projects/...
+        include_once './project.php';
+        $files = scanForProjects();
+        $other_projects = getProjects($files);
+
+        // Remove "self" from search pool
+        $this_idx = array_search($this->id, array_column($other_projects, 'id'));
+        unset($other_projects[$this_idx]);
+
+        $scored_projs = array();
+
+        // Generate tag scores
+        foreach($other_projects as $other_proj){
+
+            array_push($scored_projs, $this->tag_intersect($other_proj));
+
+        }
+
+
+        $scores = array_column($scored_projs, 'score');
+
+        //sort by top "score-proj" key-value pair first
+        array_multisort($scores, SORT_DESC, $scored_projs);
+
+        return $scored_projs; 
+    }
+
+    function tag_intersect(Project $other_proj){
+    // Scores the similarity between two projects by number of shared tags.
+        $this_tags = $this->tags;
+        $other_tags = $other_proj->tags;
+        
+        /* SCORING
+        ––––––––––––––––––––––––––––––––––––––––––––––––––*/
+        $shared_tags = array_intersect($this_tags, $other_tags); //get matching tags
+        
+        //store proj with tags and score
+        $key_values = array('proj'       => $other_proj, 
+                            'shared_tags'=> $shared_tags, 
+                            'score'      => count($shared_tags));
+
+        //console_log($shared_tags);
+        //console_log($key_values);
+
+        return $key_values; 
+    }
+
     function getBetween($string, $start, $end){
             if (strpos($string, $start)) { // required if $start not exist in $string
                 $startCharCount = strpos($string, $start) + strlen($start);
@@ -90,6 +141,7 @@ class Project{
                 return '';
             }
      }
+
 }
 
 function getProjects($files){

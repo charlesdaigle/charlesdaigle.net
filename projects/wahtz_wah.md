@@ -1,4 +1,4 @@
-{"category": "project", "dateCreated": "Dec 2019", "title": "'Wahtz Wah' Pedal", "tags": ["audio", "analog", "electronics", "pedal", "hardware"], "desc": "Built and analyzed a wah-wah effect pedal.", "icon" : "fas fa-square"}
+{"category": "project", "dateCreated": "Dec 2019", "title": "'Wahtz Wah' Pedal", "tags": ["audio", "analog", "electronics", "pedal", "hardware", "effects"], "desc": "Built and analyzed a wah-wah effect pedal.", "icon" : "fas fa-square"}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 
