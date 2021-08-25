@@ -1,6 +1,6 @@
 <head>
 
-    <?php include './head.php' ?>
+    <?php include_once './head.php' ?>
 
     <style>
         body{
@@ -105,8 +105,8 @@ li.L9 { background: #eee }
 <div class="container-fluid">
     
     <?php
-        include "project.php";
-        include "Parsedown.php";
+        include './project.php';
+        include './Parsedown.php';
 
         if(isset($_GET["id"])){
             $post_id = $_GET["id"];
@@ -116,16 +116,16 @@ li.L9 { background: #eee }
             $Parsedown = new Parsedown();
 
             echo "<h1 class='post-title'>" . $project->title . "</h1>";
-            echo "<h4>" . $project->description . "</h4>";
+            echo "<h4 class='post-description'>" . $project->description . "</h4>";
             echo "<p style='display: inline; vertical-align: middle;'>" . $project->dateCreated . "</p>";
 
             echo "<hr style='color: #dedede;'>";
 
             echo $Parsedown->text($page);
 
+            include './related.php';
+
         }
-
-
 
     ?>
 </div>

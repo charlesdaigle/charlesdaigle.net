@@ -1,4 +1,4 @@
-<?php include './head.php' ?>
+<?php include_once './head.php' ?>
 <div class="container-fluid">
   <header id="header" class="header header-fixed" role="banner">
     <nav class="navbar navbar-expand-lg navbar-light" role="navigation">
@@ -34,7 +34,7 @@
             </li>
 
             <li>
-              <a href="/docs/resume_2021.pdf" target="_blank" class="navbar-link" title="Resume">
+              <a class="navbar-link" href="/docs/resume_2021.pdf" target="_blank" title="Resume">
                 <i class="fas fa-file-alt"></i>
                 <span>Resume</span>
               </a>

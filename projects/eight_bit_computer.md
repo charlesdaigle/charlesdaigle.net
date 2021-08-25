@@ -1,4 +1,4 @@
-{"category": "project", "dateCreated": "Aug 2021", "title": "Ben Eater 8-Bit Computer", "tags": ["computing", "8-bit", "electronics", "effects", "hardware", "software"], "desc": "Built Ben Eater's 8-bit computer.", "icon" : "fas fa-square"}
+{"category": "project", "dateCreated": "Aug 2021", "title": "Ben Eater 8-Bit Computer", "tags": ["computing", "8-bit", "electronics", "effects", "hardware"], "desc": "Built Ben Eater's 8-bit computer.", "icon" : "fas fa-square"}
 
 This document serves to show examples of all embeddable content on my site. Please enjoy!
 
