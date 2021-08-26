@@ -1,4 +1,37 @@
-<?php include_once './head.php' ?>
+<?php ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL); ?>
+
+<?php 
+include_once './head.php';
+
+/* 
+navbar/homepage loads like so:
+    On homepage: 
+        Home          --> nothing
+        About/Contact --> scroll down
+
+    Elsewhere in site: 
+        Home          --> index_no_animation.php
+        About/Contact --> index_no_animation.php#about
+
+*/
+$this_page_link = "$_SERVER[REQUEST_URI]";
+$HOME_URI_1 = '/';
+$HOME_URI_2 = '/index.php';
+$to_append = '/';
+
+console_log($this_page_link);
+
+// if we are on the homepage...
+if (strcmp($this_page_link, $HOME_URI_1) !== 0 &&
+    strcmp($this_page_link, $HOME_URI_2) !== 0) {
+  $to_append = './index_no_animation.php';
+}
+
+console_log($to_append);
+
+?>
 <div class="container-fluid">
   <header id="header" class="header header-fixed" role="banner">
     <nav class="navbar navbar-expand-lg navbar-light" role="navigation">
@@ -13,21 +46,21 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
             <li>
-              <a class="navbar-active navbar-link" href="/" title="Home -- Charles Daigle">
+              <a class="navbar-active navbar-link" href="<?php echo $to_append?>#home" title="Home -- Charles Daigle">
                 <i class="fas fa-home"></i>
                 <span>Home</span>
               </a>
             </li>
 
             <li>
-              <a class="navbar-link" href="#about" title="About -- Charles Daigle">
+              <a class="navbar-link" href="<?php echo $to_append . '#about'?>" title="About -- Charles Daigle">
                 <i class="fas fa-question-circle"></i>
                 <span>About</span>
               </a>
             </li>
 
             <li>
-              <a class="navbar-link" href="#contact">
+              <a class="navbar-link" href="<?php echo $to_append?>#contact">
                 <i class="fas fa-address-card"></i>
                 <span>Contact</span>
               </a>
@@ -41,7 +74,7 @@
             </li>
 
             <li>
-              <a href="#blog" class="navbar-link" title="Blog">
+              <a href="./all_projects.php" class="navbar-link" title="Blog">
                 <i class="fas fa-rss"></i>
                 <span>Blog</span>
               </a>
@@ -74,9 +107,9 @@
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
           </form>-->
-          </ul>
-        </div>
+        </ul>
       </div>
-    </nav>
-  </header>
+    </div>
+  </nav>
+</header>
 </div>

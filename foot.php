@@ -31,4 +31,6 @@
     $(".card").css("transition", "100ms");
     $(".badge-primary").css("transition", "75ms");
   });
+
+
 </script>

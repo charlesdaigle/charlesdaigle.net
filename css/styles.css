@@ -2,6 +2,14 @@
 html {
   scroll-behavior: smooth;
 }
+html[mode=dark] {
+  --color-text: #FFFFEE;
+  /* CSS HEX */
+  --independence: #404664ff;
+  --snow: #f9f0f0ff;
+  --tan-crayola: #df9768ff;
+  --middle-blue: #8ac4d0ff;
+}
 
 body {
   background-color: #FEF8F8;
@@ -28,7 +36,7 @@ a, a:hover {
 .row {
   padding: 10px;
 }
-.row div {
+.row .col {
   margin-bottom: 20px;
 }
 
@@ -48,18 +56,18 @@ h1 {
   font-weight: 600;
 }
 h1 .tag-title {
+  color: #000000;
+  background-color: #F5E2D6;
   font-family: Raleway;
   font-weight: 600;
-  color: #000000;
-  background-color: #F5E2D6;
 }
 h1 .badge-primary {
+  margin: 100px 0px 10px 25px;
   color: #000000;
   background-color: #F5E2D6;
-  font-style: italic;
-  margin: 100px 0px 10px 25px;
-  border-radius: 12px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 6px;
+  border-radius: 12px;
+  font-style: italic;
 }
 
 .name {
@@ -79,11 +87,31 @@ p, li {
 
 .text-link {
   color: #2698d9;
+  font-weight: 600;
+  transition: color 100ms ease-out;
+  list-style-type: none;
+}
+
+.text-link:hover {
+  color: #0f3d57;
+  font-weight: 900;
+  transition: color 100ms ease-out, font-weight 100ms ease-out;
 }
 
 /* Image
 ––––––––––––––––––––––––––––––––––––––––––––––––––
 */
+/* Contact Info
+––––––––––––––––––––––––––––––––––––––––––––––––––
+*/
+.contact-card {
+  list-style-type: none;
+  font-size: 14px;
+  width: 280px;
+  margin: 0;
+  padding: 0;
+}
+
 /* Navbar
 ––––––––––––––––––––––––––––––––––––––––––––––––––
 */
@@ -101,12 +129,11 @@ p, li {
 }
 
 .navbar-brand {
+  margin: 0;
+  padding: 5px;
   border: 1px solid transparent;
   border-radius: 0.5rem;
   background-color: transparent;
-  transition: border-color 100ms ease-out;
-  margin: 0;
-  padding: 5px;
   transition: transform 100ms ease-out, border-color 100ms ease-out, background-color 100ms ease-out;
 }
 
@@ -321,8 +348,6 @@ collapse {
 
 .embed-wrapper.spotify {
   display: block;
-  width: 100%;
-  height: 100%;
 }
 
 .prettyprint ol.linenums > li {

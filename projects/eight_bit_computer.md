@@ -17,21 +17,21 @@ This document serves to show examples of all embeddable content on my site. Plea
 # Example code that shows the functionality of 'prettyprint'.
 class Example:
 
-  def __init__(self):
-    self.color       = 0xFc3ef3
-    self.flavor      = 'strawberry'
-    self.favoriteNum = 1388
+def __init__(self):
+self.color       = 0xFc3ef3
+self.flavor      = 'strawberry'
+self.favoriteNum = 1388
 
 
 def printOneToTen(message):
 ''' Documentation goes here (in the docstring)
 '''
-  for n in range(0,10):
-    print(n)
+for n in range(0,10):
+print(n)
 
-  # Sample comment
-  if message == 'Hello World!':
-    return 'Exit'
+# Sample comment
+if message == 'Hello World!':
+return 'Exit'
 ```
 
 ## Math (\\(LaTeX)\\)
@@ -42,19 +42,55 @@ $$\begin{equation}x = {-b \pm \sqrt{b^2-4ac} \over 2a}.\end{equation}$$
 ## Chess
 
 <div class="embed-wrapper chess">
-  <iframe src="https://lichess.org/embed/IjFEjP3W#86?theme=auto&bg=auto"
-width=500 height=300 frameborder=0></iframe>
+    <iframe src="https://lichess.org/embed/IjFEjP3W#86?theme=auto&bg=auto"
+            width=500 
+            height=300 
+            frameborder=0>     
+    </iframe>
 </div>
 
  
 ## Video
 
 <div class="embed-wrapper video">
-  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/dFUYsbbf6U0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/dFUYsbbf6U0" 
+            width="100%" 
+            height="100%" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; 
+                   autoplay; 
+                   clipboard-write; 
+                   encrypted-media; 
+                   gyroscope; 
+                   picture-in-picture" 
+            allowfullscreen>
+    </iframe>
 </div>
 
  
 ## Spotify
-<div class="embed-wrapper spotify">
-  <iframe src="https://open.spotify.com/embed/playlist/1OHX0mH8ifPtTvnMxY8hLb?theme=0" width="350px" height="400px" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+<div class="row">
+    <div class="col col-lg-4 col-md-4 col-sm-12">
+        <iframe src="https://open.spotify.com/embed/album/1DFixLWuPkv3KT3TnV35m3"        width="300" 
+                height="545" 
+                frameborder="0" 
+                allowtransparency="true" 
+                allow="encrypted-media">
+        </iframe>
+    </div>
 </div>
+ 
+## Images/Figures
+<div class="row">
+    <div class="col col-lg-9 col-md-12 col-sm-12">
+        <figure class="figure">
+            <img src="../images/fruit2.png" class="figure-img img-fluid rounded" alt="The author's personal fruit tier list.">
+            <figcaption class="figure-caption">
+                My fruit tier list.
+            </figcaption>
+        </figure>
+    </div>
+</div>
+
+Incidentally, here's more text. 
