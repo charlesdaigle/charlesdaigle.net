@@ -34,20 +34,26 @@ if message == 'Hello World!':
 return 'Exit'
 ```
 
+ 
 ## Math (\\(LaTeX)\\)
 
 When \\(a \ne 0\\), there are two solutions to \\(ax^2 + bx + c = 0\\) and they are
 $$\begin{equation}x = {-b \pm \sqrt{b^2-4ac} \over 2a}.\end{equation}$$
 
+<!--
 ## Chess
 
-<div class="embed-wrapper chess">
-    <iframe src="https://lichess.org/embed/IjFEjP3W#86?theme=auto&bg=auto"
-            width=500 
-            height=300 
-            frameborder=0>     
-    </iframe>
-</div>
+<div class="row">
+    <div class="col col-lg-6 col-md-12 col-sm-6">
+        <div class="chess">
+            <iframe src="https://lichess.org/embed/IjFEjP3W#86?theme=auto&bg=auto"
+                    width=800 
+                    height=500
+                    frameborder=0>     
+            </iframe>
+        </div>
+    </div>
+</div>-->
 
  
 ## Video
@@ -80,6 +86,7 @@ $$\begin{equation}x = {-b \pm \sqrt{b^2-4ac} \over 2a}.\end{equation}$$
         </iframe>
     </div>
 </div>
+
  
 ## Images/Figures
 <div class="row">

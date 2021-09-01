@@ -17,12 +17,13 @@ error_reporting(E_ALL); ?>
 			<div class="row first animate__animated animate__fadeIn">
 				<div class="col col-lg-4 col-md-6 col-sm-6">
 					<h1 class="name animate__animated animate__fadeInDown animate__delay-1s">Charles N. Daigle</h1>
-					<img class="img-fluid" src="images/pic.jpg">
+					<img class="img-fluid pic" src="images/pic.jpg">
 				</div>
 			</div>
-			<div id="about" class="row animate__animated animate__fadeInUp animate__delay-1s">
+
+			<div class="row animate__animated animate__fadeInUp animate__delay-1s">
 				<div class="col col-lg-6 col-md-6 col-sm-12">
-					<h2>About</h2>
+					<h2 id="about">About</h2>
 					<div class="card business-card">
 						<p>
 							Welcome! My name is Charlie, and I am studying Electrical Engineering and Music Technology at Northeastern University in <b>Boston, MA</b>. My interests vary widely, and include:
@@ -38,9 +39,9 @@ error_reporting(E_ALL); ?>
 					</div>
 				</div>
 				<div class="col col-lg-4 col-md-6 col-sm-12">
-					<h2>Contact</h2>
+					<h2 id="contact">Contact</h2>
 
-					<div id="contact" class='card'>
+					<div class='card'>
 						<ul class='contact-card'>
 							<li class="text-link">
 								<a tabindex = 0

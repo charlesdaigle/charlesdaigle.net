@@ -262,6 +262,7 @@
         this.addClass("unpinned");
         this.removeClass("pinned");
 
+        // TODO: make it so that when user scrolls away, collapse navbar
         if (this.onUnpin) {
           this.onUnpin.call(this);
         }

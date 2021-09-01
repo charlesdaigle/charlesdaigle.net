@@ -34,7 +34,7 @@ console_log($to_append);
 ?>
 <div class="container-fluid">
   <header id="header" class="header header-fixed" role="banner">
-    <nav class="navbar navbar-expand-lg navbar-light" role="navigation">
+    <nav class="navbar navbar-expand-lg navbar-dark" id="nav" role="navigation">
       <div class="container-fluid">
 
         <a class="navbar-brand" href="/">CD</a>
@@ -88,25 +88,15 @@ console_log($to_append);
                 <span>STEM Tutoring</span>
               </a>
             </li>
-
-      <!-- Two Bootstrap examples: a dropdown, and a search bar
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
+            <li>
+              <div class="theme-switch-wrapper">
+                  <label class="theme-switch" for="checkbox">
+                      <input type="checkbox" id="checkbox" />
+                      <div class="slider round"></div>
+                </label>
+                <em>dark</em>
+              </div>
             </li>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>-->
         </ul>
       </div>
     </div>

@@ -67,7 +67,7 @@ class Project{
 
         // Output each tag as a Bootstrap badge that links to the tag's page
         foreach($tags as $tag){
-
+            
             echo("<a class='badge badge-primary'");
             echo("href=");
             echo("'tag_sorted.php?tag=" . $tag . "'" . ">"); //add "tag" to URL

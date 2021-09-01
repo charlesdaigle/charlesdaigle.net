@@ -7,6 +7,7 @@
   <?php
 
     include_once './project.php';
+    include_once './head.php';
     $files = scanForProjects();
     $projects = getProjects($files);
     $related_proj_info = $project->get_related__ByTag(3);
