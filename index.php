@@ -36,6 +36,9 @@ error_reporting(E_ALL); ?>
 							<li>physics</li>
 							<li>mathematics</li>
 						</ul>
+						<p>
+							This site is a work in progress. Most of it is programmed by me, and you can check out the project files on <a class="text-link" href="https://github.com/charlesdaigle/charlesdaigle.net" target="_blank">GitHub.</a>
+						</p>
 					</div>
 				</div>
 				<div class="col col-lg-4 col-md-6 col-sm-12">
