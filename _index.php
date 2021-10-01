@@ -85,7 +85,7 @@ error_reporting(E_ALL); ?>
 
 			
 			<div class="row justify-content-around animate__animated animate__fadeInUp animate__delay-2s">
-			<h2>Selected Projects (demo only. Full blog posts coming soon!)</h2>
+			<h2>Selected Projects</h2>
 			<!-- Cards
 			–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 				<?php
