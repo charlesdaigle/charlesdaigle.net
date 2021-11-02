@@ -14,7 +14,7 @@ error_reporting(E_ALL); ?>
 		<div class="container-fluid">
 
 
-			<div class="row first animate__animated animate__fadeIn">
+			<div class="row first animate__animated animate__fadeIn animate__delay-1s">
 				<div class="col col-lg-4 col-md-6 col-sm-6">
 					<h1 class="name animate__animated animate__fadeInDown animate__delay-1s">Charles N. Daigle</h1>
 					<img class="img-fluid pic" src="images/pic.jpg">

@@ -81,7 +81,7 @@ console_log($to_append);
             </li>
 
             <li>
-              <a href="/stem" class="navbar-link navbar-stem" title="STEM Tutoring and Enrichment" target="_blank">
+              <a href="/stem/stem.php" class="navbar-link navbar-stem" title="STEM Tutoring and Enrichment" target="_blank">
                 <span>
                   <img src="stem/images/favicon-16x16.png"></img>
                 </span>
