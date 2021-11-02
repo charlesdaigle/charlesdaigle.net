@@ -156,11 +156,21 @@
       details.lastScrollY = lastScrollY;
       details.direction = scrollY > lastScrollY ? "down" : "up";
       details.distance = Math.abs(scrollY - lastScrollY);
-      details.isOutOfBounds = scrollY < 0 || scrollY + height > scrollHeight;
+      details.isOutOfBounds = scrollY < 0 || 
+                              scrollY + height > scrollHeight;
       details.top = scrollY <= options.offset[details.direction];
       details.bottom = scrollY + height >= scrollHeight;
       details.toleranceExceeded =
         details.distance > options.tolerance[details.direction];
+
+      /* ADDED BY:
+       * Charles Daigle
+       * To auto-close the navbar dropdown on mobile onscroll
+      console.log(details.isOutOfBounds);
+      if (details.isOutOfBounds) {
+        $(".navbar-collapse").collapse('hide');
+      }
+       */
 
       callback(details);
 
@@ -262,9 +272,15 @@
         this.addClass("unpinned");
         this.removeClass("pinned");
 
+          $(".navbar-collapse").collapse('hide');
+          console.log(this.onUnpin);
+          
         // TODO: make it so that when user scrolls away, collapse navbar
         if (this.onUnpin) {
+
+
           this.onUnpin.call(this);
+
         }
       }
     },

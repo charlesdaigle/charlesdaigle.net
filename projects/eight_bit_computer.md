@@ -92,7 +92,7 @@ $$\begin{equation}x = {-b \pm \sqrt{b^2-4ac} \over 2a}.\end{equation}$$
 <div class="row">
     <div class="col col-lg-9 col-md-12 col-sm-12">
         <figure class="figure">
-            <img src="../images/fruit2.png" class="figure-img img-fluid rounded" alt="The author's personal fruit tier list.">
+            <img src="../images/fruit2.PNG" class="figure-img img-fluid rounded" alt="The author's personal fruit tier list.">
             <figcaption class="figure-caption">
                 My fruit tier list.
             </figcaption>

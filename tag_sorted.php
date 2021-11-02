@@ -1,7 +1,7 @@
 <html lang="en">
   <head>
 
-    <?php include './head.php';
+    <?php include_once './head.php';
           ini_set('display_errors', 1);
           ini_set('display_startup_errors', 1);
           error_reporting(E_ALL);?>
@@ -60,5 +60,5 @@
     </div>
 </div>
 
-<?php include './foot.php'; ?>
+<?php include './foot.php' ?>
 </html>

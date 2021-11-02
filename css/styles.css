@@ -1,8 +1,4 @@
 @charset "UTF-8";
-html {
-  scroll-behavior: smooth;
-}
-
 :root {
   --text-color: #1a1a1a;
   --bg-color:	#FEF8F8;
@@ -142,7 +138,7 @@ p, li {
 ––––––––––––––––––––––––––––––––––––––––––––––––––
 */
 .pic {
-  border-radius: 100px;
+  border-radius: 80px;
 }
 
 /* Contact Info
@@ -334,9 +330,9 @@ input:checked + .slider:before {
 }
 
 .headroom--unpinned {
-  -webkit-transform: translateY(-100%);
-  -ms-transform: translateY(-100%);
-  transform: translateY(-100%);
+  -webkit-transform: translateY(-70%);
+  -ms-transform: translateY(-70%);
+  transform: translateY(-70%);
 }
 
 .header {
@@ -415,6 +411,7 @@ input:checked + .slider:before {
   position: relative;
   z-index: 200;
   background-color: var(--badge-bg-color);
+  color: var(--badge-text-color);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 4px;
   margin-right: 5px;
   margin-bottom: 5px;
@@ -576,7 +573,7 @@ pre code {
   /* a function name */
 }
 .blog-content p {
-  font-family: "Roboto", sans-serif;
+  font-family: "Lato";
 }
 
 ::-webkit-scrollbar {
