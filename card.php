@@ -12,24 +12,24 @@
 
     ?>
 
-      <a class="stretched-link" 
-         href=<?php echo "'post.php?id=" . $proj->id . "'"?>>
+    <a class="stretched-link" 
+       href=<?php echo "'post.php?id=" . $proj->id . "'"?>>
 
-        <h2 class="card-title">
-          <?php echo($proj->title)?></h2>
-        <p><span class="eta"></span> (<span class="words"></span> words)</p>
-        <h4 class="card-dateCreated">
-          <?php echo($proj->dateCreated)?></h4>
-        <p class="card-description">
-          <?php echo($proj->description)?></p>
+      <h2 class="card-title">
+        <?php echo($proj->title)?></h2>
+      <p>
+        <span class="eta"></span> (<span class="words"></span> words)</p>
+      <h4 class="card-dateCreated">
+        <?php echo($proj->dateCreated)?></h4>
+      <p class="card-description">
+        <?php echo($proj->description)?></p>
 
-        <div class="projectTags">
-          <?php
-            // Print each tag in a project
-            $proj->displayProjectTags__Card(); ?>
-        </div>
-      </a>
-    </article>
+      <div class="projectTags">
+        <?php
+          // Print each tag in a project
+          $proj->displayProjectTags__Card(); ?>
+      </div>
+    </a>
 
   </div>
 </div>
