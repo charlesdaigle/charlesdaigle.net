@@ -81,9 +81,9 @@ A similar template is used for all other effects in the signal chain. Since they
 
 Since PureData allows you to use multiple inputs, the PureData GUI sliders are used to debug the patch alongside the OSC messages. This makes iterative development very simple, as there are always controls available to the developer.
 
-Please 
-<a href="/index_no_animation.php#contact" class="text-link">
-email me
-</a> if you would like to try this project for yourself, or have any questions!
+Please <span><a class="text-link" tabindex = 0 onclick="copyToClipboard()" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-content="Email copied to clipboard!">
+contact me
+  </a></span> if you would like to try this project for yourself, or have any questions!
+
 
 </article>

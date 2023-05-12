@@ -23,7 +23,6 @@
 
                     echo "<h1 class='post-title'>" . $project->title . "</h1>";
                     echo "<h4 class='post-description'>" . $project->description . "</h4>";
-                    echo "<p style='display: inline; vertical-align: middle;'>" . $project->dateCreated . "</p>";
 
                     echo "<hr style='color: #dedede;'>";
 
@@ -51,7 +50,27 @@
                    $("img").addClass("img-fluid");
                });
            </script>
+           
 
 </body>
 
 <?php include './foot.php';?>
+
+<script>
+		$( document ).ready(function() {
+			$(".navbar").addClass(["animate__animated", "animate__fadeInDown", "animate__delay-1s"])
+		});
+
+		function copyToClipboard() {
+			let parts = ["daig", "le", ".", "c", "@northeas", "tern", ".", "edu"];
+			navigator.clipboard.writeText(parts.join(""));
+		}
+
+		var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+		var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+		  return new bootstrap.Popover(popoverTriggerEl)
+		})
+		var popover = new bootstrap.Popover(document.querySelector('.popover-dismiss'), {
+		  trigger: 'focus'
+		})
+</script>
