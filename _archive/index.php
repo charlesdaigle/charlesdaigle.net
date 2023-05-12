@@ -9,15 +9,15 @@ error_reporting(E_ALL); ?>
 		<?php include_once './head.php'?>
 
 	</head>
-	<?php include_once './navbar.php'?>
+		<?php include_once './navbar.php'?>
 	<body>
 		<div class="container-fluid">
 
 
-			<div class="row first animate__animated animate__fadeIn">
+			<div class="row first animate__animated animate__fadeIn animate__delay-1s">
 				<div class="col col-lg-4 col-md-6 col-sm-6">
 					<h1 class="name animate__animated animate__fadeInDown animate__delay-1s">Charles N. Daigle</h1>
-					<img class="img-fluid pic" src="images/pic.jpg">
+					<img class="img-fluid pic" src="./images/pic.jpg">
 				</div>
 			</div>
 
@@ -85,7 +85,7 @@ error_reporting(E_ALL); ?>
 
 			
 			<div class="row justify-content-around animate__animated animate__fadeInUp animate__delay-2s">
-			<h2>Selected Projects</h2>
+			<h2>Selected Projects (demo only. Full blog posts coming soon!)</h2>
 			<!-- Cards
 			–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 				<?php
@@ -113,15 +113,13 @@ error_reporting(E_ALL); ?>
 			
 		</div>
 	</div>
-	
-	<?php include './foot.php' ?>
 
-	<!-- End Document
-	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<?php include './foot.php' ?>
 
 	<script>
 		$( document ).ready(function() {
-			$(".navbar").addClass(["animate__animated", "animate__fadeInDown", "animate__delay-1s"])
+			$(".navbar").addClass(["animate__animated", "animate__fadeInDown", "animate__delay-1s"]);
+			$(window).scrollTop(0);
 		});
 
 		function copyToClipboard() {
@@ -136,7 +134,14 @@ error_reporting(E_ALL); ?>
 		var popover = new bootstrap.Popover(document.querySelector('.popover-dismiss'), {
 		  trigger: 'focus'
 		})
+
+		$('.navbar-collapse').collapse('hide');
 	</script>
+	
+
+	<!-- End Document
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
 	</body>
 </html>
 

@@ -1,5 +1,5 @@
 {"category": "project", "dateCreated": "Aug 2021", "title": "Ben Eater 8-Bit Computer", "tags": ["computing", "8-bit", "electronics", "effects", "hardware"], "desc": "Built Ben Eater's 8-bit computer.", "icon" : "fas fa-square"}
-
+<article>
 This document serves to show examples of all embeddable content on my site. Please enjoy!
 
 ## Tables
@@ -13,7 +13,7 @@ This document serves to show examples of all embeddable content on my site. Plea
  
 ## Code (w/automatic syntax highlighting)
 
-```
+```py
 # Example code that shows the functionality of 'prettyprint'.
 class Example:
 
@@ -21,7 +21,6 @@ def __init__(self):
 self.color       = 0xFc3ef3
 self.flavor      = 'strawberry'
 self.favoriteNum = 1388
-
 
 def printOneToTen(message):
 ''' Documentation goes here (in the docstring)
@@ -101,3 +100,4 @@ $$\begin{equation}x = {-b \pm \sqrt{b^2-4ac} \over 2a}.\end{equation}$$
 </div>
 
 Incidentally, here's more text. 
+</article>

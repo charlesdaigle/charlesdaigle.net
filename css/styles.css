@@ -20,6 +20,19 @@
   --snow: #f9f0f0ff;
   --tan-crayola: #df9768ff;
   --middle-blue: #8ac4d0ff;
+  --code-block-text-color: #1c1917;
+  --code-block-bg-color: #efefef;
+  --code-block-str: #c63232;
+  --code-block-kwd: #22B14C;
+  --code-block-com:#1aaab1;
+  --code-block-typ:#523df5;
+  --code-block-lit:#31ad1f;
+  --code-block-pun:#919288;
+  --code-block-tag:#F92672;
+  --code-block-atn:#66D9EF;
+  --code-block-atv:#A6E22D;
+  --code-block-dec:#606;
+  --code-block-fun: red;
 }
 
 [data-theme=dark] {
@@ -43,12 +56,28 @@
   --snow: #f9f0f0ff;
   --tan-crayola: #df9768ff;
   --middle-blue: #8ac4d0ff;
+  --code-block-text-color: #FDFFF1;
+  --code-block-bg-color: #e1e2dc;
+  --code-block-str: #E6DB74;
+  --code-block-kwd: #F92672;
+  --code-block-com:#6E7066;
+  --code-block-typ:#66D9EF;
+  --code-block-lit:#AE81FF;
+  --code-block-pun:#919288;
+  --code-block-tag:#008;
+  --code-block-atn:#606;
+  --code-block-atv:#880000;
+  --code-block-dec:#606;
+  --code-block-fun: red;
+}
+
+html {
+  background-color: var(--bg-color);
 }
 
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
-  transition: background-color 100ms ease-out;
 }
 
 a, a:hover {
@@ -498,9 +527,9 @@ pre {
 }
 
 pre code {
-  color: #1c1917;
+  color: var(--code-block-text-color);
   display: block;
-  background-color: #efefef;
+  background-color: var(--code-block-bg-color);
   white-space: pre;
   -webkit-overflow-scrolling: touch;
   overflow-x: scroll;
@@ -515,59 +544,59 @@ pre code {
 
 @media screen {
   .str {
-    color: #c63232;
+    color: var(--code-block-str);
   }
 
   /* string content */
   .kwd {
-    color: #22B14C;
+    color: var(--code-block-kwd);
     font-weight: bold;
   }
 
   /* a keyword */
   .com {
-    color: #1aaab1;
+    color: var(--code-block-com);
     font-style: italic;
   }
 
   /* a comment */
   .typ {
-    color: #523df5;
+    color: var(--code-block-typ);
   }
 
   /* a type name */
   .lit {
-    color: #31ad1f;
+    color: var(--code-block-lit);
   }
 
   /* a literal value */
   /* punctuation, lisp open bracket, lisp close bracket */
   .pun, .opn, .clo {
-    color: #660;
+    color: var(--code-block-pun);
   }
 
   .tag {
-    color: #008;
+    color: var(--code-block-tag);
   }
 
   /* a markup tag name */
   .atn {
-    color: #606;
+    color: var(--code-block-atn);
   }
 
   /* a markup attribute name */
   .atv {
-    color: #080;
+    color: var(--code-block-atv);
   }
 
   /* a markup attribute value */
   .dec, .var {
-    color: #606;
+    color: var(--code-block-dec);
   }
 
   /* a declaration; a variable name */
   .fun {
-    color: red;
+    color: var(--code-block-fun);
   }
 
   /* a function name */

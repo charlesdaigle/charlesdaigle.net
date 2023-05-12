@@ -30,6 +30,7 @@
           $proj->displayProjectTags__Card(); ?>
       </div>
     </a>
+  </article>
 
   </div>
 </div>

@@ -1,5 +1,5 @@
 <head>
-
+    <?php include_once './navbar.php'?>
     <?php include_once './head.php' ?>
 
     <style>
@@ -68,10 +68,6 @@
 
 </head>
 <body>
-
-    <?php include './navbar.php'?>
-
-
 
     <div class="container-fluid">
         <div class='row'>

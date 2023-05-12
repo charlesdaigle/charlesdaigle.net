@@ -59,6 +59,4 @@
     });
   });
 
-  //TODO: debug this, readingtime.min.js for reasons as to why it's only outputting 1 word
-
 </script>

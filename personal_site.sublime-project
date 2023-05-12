@@ -1,8 +1,20 @@
 {
+	/*"folders":
+	[
+		{
+			"path": "."
+		}
+	]*/
+	/*"folders":
+	[
+		{
+			"path": "C:\\Users\\Charles Daigle\\Documents\\_tadpole\\tadpole-website-frontend",
+		},
+	],*/
 	"folders":
 	[
 		{
 			"path": "."
 		}
-	]
+	],
 }

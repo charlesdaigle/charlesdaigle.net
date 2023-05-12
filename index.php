@@ -4,20 +4,21 @@ error_reporting(E_ALL); ?>
 
 <!DOCTYPE html>
 <html id="home" lang="en">
+	<?php include_once './navbar.php'?>
 	<head>
 
 		<?php include_once './head.php'?>
 
 	</head>
-		<?php include_once './navbar.php'?>
+	
 	<body>
 		<div class="container-fluid">
 
 
-			<div class="row first animate__animated animate__fadeIn animate__delay-1s">
+			<div class="row first animate__animated animate__fadeIn">
 				<div class="col col-lg-4 col-md-6 col-sm-6">
 					<h1 class="name animate__animated animate__fadeInDown animate__delay-1s">Charles N. Daigle</h1>
-					<img class="img-fluid pic" src="./images/pic.jpg">
+					<img class="img-fluid pic" src="images/pic.jpg">
 				</div>
 			</div>
 
@@ -26,19 +27,15 @@ error_reporting(E_ALL); ?>
 					<h2 id="about">About</h2>
 					<div class="card business-card">
 						<p>
-							Welcome! My name is Charlie, and I am studying Electrical Engineering and Music Technology at Northeastern University in <b>Boston, MA</b>. My interests vary widely, and include:
+							Welcome! My name is Charlie, and I am studying Electrical Engineering and Music Technology at Northeastern University in <b>Boston, MA</b>. My interests are:
 						</p>
 						<ul>
-							<li>analog/digital electronics</li>
-							<li>data science</li>
-							<li>web development/design</li>
-							<li>piano, guitar, <a class="text-link" href="https://en.wikipedia.org/wiki/Mouth_trumpet" target="_blank">mouth trumpet</a></li>
+							<li>analog signal processing</li>
+							<li>embedded firmware development</li>
+							<li>new <a href="https://www.nime.org/" class="text-link">interfaces</a> in musical expression</li>
 							<li>physics</li>
 							<li>mathematics</li>
 						</ul>
-						<p>
-							This site is a work in progress. Most of it is programmed by me, and you can check out the project files on <a class="text-link" href="https://github.com/charlesdaigle/charlesdaigle.net" target="_blank">GitHub.</a>
-						</p>
 					</div>
 				</div>
 				<div class="col col-lg-4 col-md-6 col-sm-12">
@@ -85,7 +82,7 @@ error_reporting(E_ALL); ?>
 
 			
 			<div class="row justify-content-around animate__animated animate__fadeInUp animate__delay-2s">
-			<h2>Selected Projects (demo only. Full blog posts coming soon!)</h2>
+			<h2>Selected Projects</h2>
 			<!-- Cards
 			–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 				<?php
@@ -113,13 +110,15 @@ error_reporting(E_ALL); ?>
 			
 		</div>
 	</div>
-
+	
 	<?php include './foot.php' ?>
+
+	<!-- End Document
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 	<script>
 		$( document ).ready(function() {
-			$(".navbar").addClass(["animate__animated", "animate__fadeInDown", "animate__delay-1s"]);
-			$(window).scrollTop(0);
+			$(".navbar").addClass(["animate__animated", "animate__fadeInDown", "animate__delay-1s"])
 		});
 
 		function copyToClipboard() {
@@ -134,14 +133,7 @@ error_reporting(E_ALL); ?>
 		var popover = new bootstrap.Popover(document.querySelector('.popover-dismiss'), {
 		  trigger: 'focus'
 		})
-
-		$('.navbar-collapse').collapse('hide');
 	</script>
-	
-
-	<!-- End Document
-	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
 	</body>
 </html>
 

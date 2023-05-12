@@ -7,6 +7,7 @@
 <meta name="author" content="Charles N. Daigle">
 <meta name="description" content="Resume and portfolio of an electrical engineer seeking jobs and internships in the greater Boston area.">
 <meta name="robots" content="index, follow">
+<meta name="color-scheme" content="light dark" />
 
 <!-- Mobile Specific Metas
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
