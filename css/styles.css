@@ -489,14 +489,6 @@ input:checked + .slider:before {
   display: block;
 }
 
-.prettyprint ol.linenums > li {
-  list-style-type: decimal;
-}
-
-.prettyprint {
-  overflow: auto;
-}
-
 table {
   display: block;
   overflow: auto;
