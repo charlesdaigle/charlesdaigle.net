@@ -188,6 +188,14 @@ p, li {
 	font-family: "Poppins";
 }
 
+article {
+	ul, ol {
+		li {
+			font-family: "Lato"
+		}
+	}
+}
+
 .text-link {
 	color: 	  var(--link-text-color);
 	font-weight: 600;

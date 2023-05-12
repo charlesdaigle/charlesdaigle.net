@@ -17,10 +17,9 @@
 
       <h2 class="card-title">
         <?php echo($proj->title)?></h2>
-      <p>
-        <span class="eta"></span> (<span class="words"></span> words)</p>
-      <h4 class="card-dateCreated">
-        <?php echo($proj->dateCreated)?></h4>
+      <h4>
+        <span class="eta"></span> (<span class="words"></span> words)
+      </h4>
       <p class="card-description">
         <?php echo($proj->description)?></p>
 
