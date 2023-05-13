@@ -40,4 +40,8 @@ After bringing it home to my dorm, I wanted to finish it up so badly. It was Fri
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_ots0_vwc_s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
+Please <span><a class="text-link" tabindex = 0 onclick="copyToClipboard()" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-content="Email copied to clipboard!">
+contact me
+  </a></span> if you have any questions!
+
 </article>

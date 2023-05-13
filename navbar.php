@@ -79,7 +79,7 @@ console_log($to_append);
                 <span>Blog</span>
               </a>
             </li>
-
+            <!-- STEM TUTORING AD
             <li>
               <a href="/stem" class="navbar-link navbar-stem" title="STEM Tutoring and Enrichment" target="_blank">
                 <span>
@@ -87,7 +87,7 @@ console_log($to_append);
                 </span>
                 <span>STEM Tutoring</span>
               </a>
-            </li>
+            </li>-->
             <li>
               <div class="theme-switch-wrapper">
                   <label class="theme-switch" for="checkbox">

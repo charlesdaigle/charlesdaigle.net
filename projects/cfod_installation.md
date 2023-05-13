@@ -31,4 +31,8 @@ Incoming infrared distance sensor inputs are mapped to "grain size" (durations) 
 
 The experience allows passers-by to become intrigued by the sounds, which form themselves into clear sentencecs as they walk closer. This symbolizes the CFoD's intent to probe the meaning of design, and allow the Northeastern community to become part of that goal.
 
+Please <span><a class="text-link" tabindex = 0 onclick="copyToClipboard()" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-content="Email copied to clipboard!">
+contact me
+  </a></span> if you have any questions!
+
 </article>
