@@ -22,7 +22,7 @@ The effects available to the end user are wah-wah, distortion, chorus, delay, an
 
 The DSP backend is coded in PureData, which wraps C in a visual programming style that allows for rapid development of DSP code. The end result can easily be used in conjunction with C/C++, allowing for a product widely compatible with a number of platforms (embedded and general purpose).
 
-To interface with a mobile UI, the Mobile Music Platform (<a href="https://danieliglesia.com/mobmuplat/" class="text-link">MobMuPlat</a>) is used to link front-panel controls with the audio backend via OSC messaging.
+To interface with a mobile UI, the Mobile Music Platform (<a target="blank" href="https://danieliglesia.com/mobmuplat/" class="text-link">MobMuPlat</a>) is used to link front-panel controls with the audio backend via OSC messaging.
 
 For expressive wah-wah control, the phone tilt sensor is employed to allow users to place their phone somewhere underfoot and actuate it to achieve a continuous "pedal" experience.
 
