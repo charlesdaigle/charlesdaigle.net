@@ -92,7 +92,7 @@ error_reporting(E_ALL); ?>
 					include_once './project.php';
 					$files = array('mobile_effects_unit.md',
 												 'wahtz_wah.md',
-												 'eight_bit_computer.md');
+												 'cfod_installation.md');
 					$selected_projects = getProjects($files);
 					foreach($selected_projects as $proj){
 						include './card.php';

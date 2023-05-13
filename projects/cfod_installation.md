@@ -17,7 +17,7 @@ One day, my <a target="blank" class="text-link" href="https://toomuchidle.com/">
 
 Their goal was to figure out what words are most commonly associated with "design." Predictably, many words like "human", "intentional", "society" had lots of hits --
 
-##### so we wanted to find a way to capture the essence of these words in sound.
+###### *so we wanted to find a way to capture the essence of these words in sound.*
 
 We had the original researchers record themselves saying some sentences constructed mostly of the "best" words from this dataset. These audio files served as the basis.
 

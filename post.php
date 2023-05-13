@@ -57,9 +57,6 @@
 <?php include './foot.php';?>
 
 <script>
-		$( document ).ready(function() {
-			$(".navbar").addClass(["animate__animated", "animate__fadeInDown", "animate__delay-1s"])
-		});
 
 		function copyToClipboard() {
 			let parts = ["daig", "le", ".", "c", "@northeas", "tern", ".", "edu"];
