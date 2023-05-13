@@ -67,7 +67,7 @@ console_log($to_append);
             </li>
 
             <li>
-              <a class="navbar-link" href="/docs/resume_2021.pdf" target="_blank" title="Resume">
+              <a class="navbar-link" href="/docs/resume.pdf" target="_blank" title="Resume">
                 <i class="fas fa-file-alt"></i>
                 <span>Resume</span>
               </a>
