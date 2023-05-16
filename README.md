@@ -77,7 +77,7 @@ This will check if the file is already included, and will include its contents o
 Any general JS scripts that you want to run on all pages should go into *[/foot.php](https://github.com/charlesdaigle/charlesdaigle.net/blob/bf764f8634a064effc3bd8d46293021d27596918/foot.php)* at the bottom.
 
 ## Plugins
-[JQuery](https://api.jquery.com/), [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS), and [animate.css](https://animate.style/) should already be usable as they are called via CDN in *[/head.php](https://github.com/charlesdaigle/charlesdaigle.net/blob/bf764f8634a064effc3bd8d46293021d27596918/head.php)* and *[/foot.php](https://github.com/charlesdaigle/charlesdaigle.net/blob/bf764f8634a064effc3bd8d46293021d27596918/foot.php)*.
+[JQuery](https://api.jquery.com/), [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS), [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/) and [animate.css](https://animate.style/) should already be usable as they are called via CDN in *[/head.php](https://github.com/charlesdaigle/charlesdaigle.net/blob/bf764f8634a064effc3bd8d46293021d27596918/head.php)* and *[/foot.php](https://github.com/charlesdaigle/charlesdaigle.net/blob/bf764f8634a064effc3bd8d46293021d27596918/foot.php)*. Follow any of these links to find version-specific documentation on how to use each of these. Most of the usage is clear from the existing files in this website.
 
 Any JS plugin code should be stored in *[/js/](https://github.com/charlesdaigle/charlesdaigle.net/tree/bf764f8634a064effc3bd8d46293021d27596918/js)*.
 
@@ -86,8 +86,39 @@ The file [/Parsedown.php](https://github.com/charlesdaigle/charlesdaigle.net/blo
 
 However, you can embed much more content than just Markdown.
 
-Use the file [/project_templates/.template.md]()
+Use the file [/project_templates/.template.md](https://github.com/charlesdaigle/charlesdaigle.net/blob/e7bd97ff47bc7716516c39db854150bba06eae8c/project_templates/.template.md) to see a full sample file containing all possible embeddable content. Currently, you can embed:
++ tables
++ code (with automatic syntax highlighting)
++ LaTeX math
++ YouTube videos
++ Spotify playlists
++ Images
 
+Save all new blog posts into [/projects/](https://github.com/charlesdaigle/charlesdaigle.net/tree/e7bd97ff47bc7716516c39db854150bba06eae8c/projects).
 
+Make sure to rename or remove these lines of "hand-selected" projects in [/index.php](https://github.com/charlesdaigle/charlesdaigle.net/blob/e7bd97ff47bc7716516c39db854150bba06eae8c/index.php) to reference the desired filenames instead of the defaults:
 
+```php
+<?php
+
+    // Display hand-curated list of projects
+
+    include_once './project.php';
+    // change these filenames to your own
+    $files = array('mobile_effects_unit.md',
+                                    'wahtz_wah.md',
+                                    'cfod_installation.md');
+    $selected_projects = getProjects($files);
+    foreach($selected_projects as $proj){
+        include './card.php';
+    }
+?>
+```
+
+## Hosting
+I host using the barebones [NearlyFreeSpeech.net](https://www.nearlyfreespeech.net/) because it costs less than $10/year. Feel free to use your own, but be warned that it will probably cost much more. Since NearlyFreeSpeech is usage-based, you will probably pay at a maximum $0.01/day, whereas GoDaddy or WordPress charge upwards of $0.05/day and $0.07/day. 
+
+I simply use [FileZilla](https://filezilla-project.org/) to upload copies of the website files to my webserver. 
+
+Make sure to configure your PHP version on the webserver to be 7.4.1.
 
