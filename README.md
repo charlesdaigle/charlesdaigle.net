@@ -81,6 +81,13 @@ Any general JS scripts that you want to run on all pages should go into *[/foot.
 
 Any JS plugin code should be stored in *[/js/](https://github.com/charlesdaigle/charlesdaigle.net/tree/bf764f8634a064effc3bd8d46293021d27596918/js)*.
 
+## Writing Blog Posts
+The file [/Parsedown.php](https://github.com/charlesdaigle/charlesdaigle.net/blob/e59495c537aed22fc3f00708a7dfed97d1e498ad/Parsedown.php) takes a Markdown file as input and renders it into HTML. 
+
+However, you can embed much more content than just Markdown.
+
+Use the file [/project_templates/.template.md]()
+
 
 
 
