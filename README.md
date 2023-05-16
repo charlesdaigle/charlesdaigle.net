@@ -15,8 +15,11 @@ Make sure to point
 
 
 ### Optional: SASS --> CSS Autocompiler
+#### Do **not** directly edit the file /css/styles.css unless you plan to skip this step.
 The script [start_mamp_scss.sh](https://github.com/charlesdaigle/charlesdaigle.net/blob/a55d07655c5a3a267f08e6d6142802ce3784d237/start_mamp_scss.sh) both starts MAMP and opens a change-watcher. 
 
-The change watcher allows the user to edit [/scss/styles.scss](https://github.com/charlesdaigle/charlesdaigle.net/blob/a55d07655c5a3a267f08e6d6142802ce3784d237/start_mamp_scss.sh), and each time the file is saved, compiles the SCSS to standard CSS (readable by the browser). Do **not** directly edit the file /css/styles.css!
+The change watcher allows the user to edit [/scss/styles.scss](https://github.com/charlesdaigle/charlesdaigle.net/blob/a55d07655c5a3a267f08e6d6142802ce3784d237/start_mamp_scss.sh), and each time the file is saved, compiles the SCSS to standard CSS (readable by the browser). 
 
-To download 
+
+
+To download SASS, use their [recommended instructions.](https://sass-lang.com/install)
