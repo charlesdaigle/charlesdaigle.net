@@ -4,6 +4,8 @@
 
 First, clone this repository. Make sure you have access to a text editor and some way to run programs (a mix of command line and Windows should be fine). I used [WSL2](https://learn.microsoft.com/en-us/windows/wsl/install), which is a great way to work on Windows filesystems through a bash shell, although any bash shell will do.
 
+I like to use [Github Desktop](https://desktop.github.com/) because it makes life a lot easier than using the command line.
+
 To develop in this codebase, install the following tools:
 ### [MAMP](https://www.mamp.info/en/downloads/)
 Note: this site uses PHP version 7.4.1. To configure MAMP for this version of PHP, *[use this tutorial.](https://stackoverflow.com/questions/16783558/how-can-i-add-additional-php-versions-to-mamp)*
