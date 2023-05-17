@@ -35,5 +35,5 @@
     </div>
 </div>
 
-<?php include './foot.php' ?>
+<?php include_once './foot.php' ?>
 </html>
