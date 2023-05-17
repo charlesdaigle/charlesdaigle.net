@@ -1,7 +1,7 @@
 {"category": "project", "dateCreated": "Dec 2019", "title": "Center For Design Installation", "tags": ["audio", "analog", "electronics", "hardware"], "desc": "Co-designed and built an interactive audio art installation.", "icon" : "fas fa-square"}
 
 <article>
-The full article can be read on the <a class="text-link" target="blank" href="https://medium.com/center-for-design/designing-experiences-shaping-futures-16c19a34738b">Center For Design Medium.</a>
+The full article can be read on the <a class="text-link" target="blank" href="https://medium.com/center-for-design/designing-experiences-shaping-futures-16c19a34738b">Center For Design Medium, by Jason Hoopes and myself.</a> Big thanks to the Center For Design and Jason Hoopes on this project!
 
 ## Overview
 This project makes use of interactive granular synthesis performed on spoken word audio files.
@@ -22,7 +22,7 @@ Their goal was to figure out what words are most commonly associated with "desig
 We had the original researchers record themselves saying some sentences constructed mostly of the "best" words from this dataset. These audio files served as the basis.
 
 ## Hardware
-The <a class="text-link" target="blank" href="https://bela.io/">Bela </a>embedded audio platform uses a BeagleBone Black board to continuously run a DSP backend that reads sensor inputs, maps them to software parameters, and the audiostream outputs to a simple 20W amplifier that drives 8ohm actuators on the windows. These window actuators are used to eliminate the need for a bulky, obtrusive speaker system -- it makes the glass itself the speaker.
+The <a class="text-link" target="blank" href="https://bela.io/">Bela </a>embedded audio platform uses a BeagleBone Black board to continuously run a DSP backend that reads sensor inputs, maps them to software parameters, and the audiostream outputs to a simple 20W amplifier that drives 8ohm actuators on the windows. These window actuators are used to eliminate the need for a bulky, obtrusive speaker system -- these high-current speakers attach with foam pads to the large glass windows with a decent frequency response (still needs to be rigorously acoustically tested, but sounds good enough). 
 
 An emergency shutoff switch is installed in hardware to ensure that any unwanted behavior can safely be terminated.
 
@@ -30,6 +30,8 @@ An emergency shutoff switch is installed in hardware to ensure that any unwanted
 Incoming infrared distance sensor inputs are mapped to "grain size" (durations) to play preset spoken word samples of about 5s each. This "window" semi-randomly skips around the sample, playing many small pieces of the original sample. A delay and reverb effect allow a smooth "soundscape" to form. 
 
 The experience allows passers-by to become intrigued by the sounds, which form themselves into clear sentencecs as they walk closer. This symbolizes the CFoD's intent to probe the meaning of design, and allow the Northeastern community to become part of that goal.
+
+The instructions to set up this installation are in <a href="https://hoopes-j.github.io/CfD_installation/setup/installation_procedure.html" target="blank" class="text-link">Jason Hoopes's GitHub here.</a>
 
 Please <span><a class="text-link" tabindex = 0 onclick="copyToClipboard()" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-content="Email copied to clipboard!">
 contact me
