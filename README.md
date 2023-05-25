@@ -26,6 +26,11 @@ The change watcher allows the user to edit *[/scss/styles.scss](https://github.c
 
 To download SASS, use their [recommended instructions](https://sass-lang.com/install) for your platform.
 
+For my installation on Ubuntu 20.04, I use the command:
+```sh
+sudo apt install ruby-sass
+```
+
 ## Running the In-Browser Preview
 Run MAMP as described before. Make sure the "Apache Server" light is green.
 
